@@ -1,0 +1,27 @@
+@host-js=http://localhost:3030
+@host-py=http://localhost:8000
+
+
+### 
+GET {{host-js}}/init HTTP/1.1
+### 
+GET {{host-py}}/init HTTP/1.1
+
+
+### 
+GET {{host-js}}/add-count HTTP/1.1
+### 
+GET {{host-py}}/add-count HTTP/1.1
+
+
+### 
+GET {{host-js}}/do-sync HTTP/1.1
+### 
+GET {{host-py}}/do-sync HTTP/1.1
+
+
+### 
+GET {{host-js}}/get-snapshot HTTP/1.1
+### 
+GET {{host-py}}/get-snapshot HTTP/1.1
+

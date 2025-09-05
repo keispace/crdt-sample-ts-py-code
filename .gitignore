@@ -1,13 +1,21 @@
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+*.db
+dist/
 
-# Swap the comments on the following lines if you wish to use zero-installs
-# In that case, don't forget to run `yarn config set enableGlobalCache false`!
-# Documentation here: https://yarnpkg.com/features/caching#zero-installs
+# TypeScript
+node_modules/
+*.tsbuildinfo
 
-#!.yarn/cache
-.pnp.*
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+build/
+venv/
+.env
+.env.*
+.mypy_cache/
+.pytest_cache/
+.cache/
+pip-wheel-metadata/

@@ -1,4 +1,25 @@
 {
-  "name": "js-client-server",
-  "packageManager": "yarn@4.6.0"
+    "name": "crdt-test-sample",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "evan <keispace.kyj@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start-py": "uvicorn app:app --reload --port 8000",
+        "start-ts": "nodemon --exec ts-node index.ts"
+    },
+    "dependencies": {
+        "@libsql/client": "^0.15.14",
+        "body-parser": "^2.2.0",
+        "express": "^5.1.0",
+        "typescript": "^5.9.2",
+        "yjs": "^13.6.27"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.3.0",
+        "nodemon": "^3.1.10",
+        "npm-watch": "^0.13.0",
+        "ts-node": "^10.9.2"
+    }
 }
